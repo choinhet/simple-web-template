@@ -1,0 +1,9 @@
+version: '3'
+
+tasks:
+  run:
+    cmds:
+      - uv run fastapi dev simple_web_template/main.py
+  tailwind:
+    cmds:
+      - tailwindcss -i ./simple_web_template/static/input.css -o ./simple_web_template/static/output.css --watch --minify
